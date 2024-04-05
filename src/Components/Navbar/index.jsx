@@ -8,7 +8,7 @@ const Navbar = () =>{
             <ul className="flex items-center gap-3">
                 <li className="font-semibold text-center text-lg text-cyan-600">
                     <NavLink to='/'>
-                        Aurora<br />Boutique
+                        Shopi<br />Boutique
                     </NavLink> 
                 </li>
                 <li>
