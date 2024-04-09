@@ -6,7 +6,6 @@ export const ShoppingCartProvider = ({children}) =>
 {
     const [count, setCount] = useState(0)
     console.log("Count: ", count)
-
     return(
         <ShoppingCartContext.Provider value={{
             count,
