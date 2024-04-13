@@ -5,8 +5,6 @@ import { XMarkIcon } from '@heroicons/react/24/solid'
 import './styles.css'
 const ProductDetail= () => {
     const context=useContext(ShoppingCartContext)
-    const product = context.productToShow
-
     return(
         <aside className={`${context.isProductDetailOpen ? 'flex' : 'hidden'} product-detail  flex-col fixed overflow-scroll right-0 top-24 border border-black rounded-lg bg-gray-50/60`}>
             <div className='flex p-3 justify-between items-center'>
