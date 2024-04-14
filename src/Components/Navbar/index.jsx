@@ -123,7 +123,7 @@ const Navbar = () =>{
                 </li>
                 <li className='flex justify-center items-center'>
 
-                     <ShoppingCartIcon className="h-6 w-6 mr-2 text-cyan-500" />
+                     <ShoppingCartIcon className="h-6 w-6 mr-2 text-cyan-500 cursor-pointer" onClick={()=> context.openCheckoutSideMenu()} />
                      {context.count}
                 </li>
             </ul>
