@@ -4,7 +4,7 @@ const OrderCard = props =>{
     const {id, title, imageUrl, price,handleDelete} = props
     let renderXMarkIcon
     if (handleDelete) {
-      renderXMarkIcon = <XMarkIcon onClick={() => handleDelete(id)} className='h-6 w-6 text-black cursor-pointer'></XMarkIcon>
+      renderXMarkIcon = <XMarkIcon onClick={() => handleDelete(id)} className='h-6 w-6 text-cyan-600 cursor-pointer'></XMarkIcon>
     }
     return(
         <div className="flex justify-between items-center mb-3">

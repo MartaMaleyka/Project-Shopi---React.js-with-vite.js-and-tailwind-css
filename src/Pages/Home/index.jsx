@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import { XMarkIcon } from '@heroicons/react/24/solid'
 import { ShoppingCartContext } from '../../Context'
 import Layout from '../../Components/Layout'
 import Card from '../../Components/Card'
@@ -26,11 +27,14 @@ function Home() {
       <div className='flex items-center justify-center relative mb-4'>
         <h1 className='font-medium text-xl'>Exclusive Products</h1>
       </div>
+      <div className=' flex items-center justify-center'>
       <input 
       type="text" name="" id="" 
       placeholder='Search a product' 
-      className=' focus:outline-none rounded-lg mb-4 w-80 p-4 border bg-cyan-600 text-white border-cyan-600 hover:bg-cyan-100 hover:text-black placeholder:text-white placeholder:hover:text-black' 
+      className='focus:outline-none rounded-lg mb-4 w-80 p-4 border bg-cyan-600 text-white border-cyan-600 hover:bg-cyan-100 hover:text-black placeholder:text-white placeholder:hover:text-black' 
       onChange={(event) => context.setSearchByTitle(event.target.value)} />
+      </div>
+
       <div className='grid gap-4 grid-cols-4 w-full max-w-screen-lg'>
         {
          renderView()
